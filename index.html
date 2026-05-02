@@ -6,94 +6,65 @@
     <title>OPD Takhli Digital Toolkit - Khemika</title>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #1a3a5a;
-            --accent-color: #007bff;
-            --bg-color: #f4f7f6;
-        }
-        body { font-family: 'Sarabun', sans-serif; background-color: var(--bg-color); margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; min-height: 100vh; }
-        
-        /* Header Section */
-        .header { width: 100%; background: linear-gradient(135deg, #1a3a5a, #0056b3); color: white; padding: 40px 20px; text-align: center; border-radius: 0 0 30px 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-        .header h1 { margin: 0; font-size: 1.8rem; letter-spacing: 1px; }
-        .header p { margin: 10px 0 0; font-size: 0.9rem; font-weight: bold; opacity: 0.9; }
-
-        /* Grid Container */
-        .container { width: 100%; max-width: 500px; padding: 30px 20px; box-sizing: border-box; }
-        .menu-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
-
-        /* Menu Card Style */
-        .menu-card { background: white; padding: 25px; border-radius: 20px; display: flex; align-items: center; gap: 20px; text-decoration: none; color: #333; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; border: 1px solid #eee; }
-        .menu-card:active { transform: scale(0.95); }
-        .menu-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
-        
-        .icon-box { width: 60px; height: 60px; border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; flex-shrink: 0; }
-        .card-info { flex-grow: 1; }
-        .card-info h2 { margin: 0; font-size: 1.1rem; color: var(--primary-color); }
-        .card-info p { margin: 5px 0 0; font-size: 0.8rem; color: #777; font-weight: bold; }
-
-        /* Specific Card Colors */
-        .bg-triage { background: #e74c3c; }
-        .bg-news { background: #f1c40f; }
-        .bg-dka { background: #9b59b6; }
-        .bg-smart { background: #2ecc71; }
-
-        /* Footer */
-        .footer { margin-top: auto; padding: 30px; text-align: center; color: #888; font-size: 0.8rem; font-weight: bold; }
+        :root { --primary: #1a3a5a; --bg: #f0f2f5; }
+        body { font-family: 'Sarabun', sans-serif; background: var(--bg); margin: 0; padding-bottom: 40px; }
+        .header { background: linear-gradient(135deg, #1a3a5a, #0056b3); color: white; padding: 25px 15px; text-align: center; border-radius: 0 0 25px 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .container { padding: 15px; max-width: 600px; margin: auto; }
+        .group-title { font-weight: bold; color: var(--primary); margin: 20px 0 10px 5px; border-left: 5px solid #007bff; padding-left: 10px; font-size: 1.1rem; }
+        .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .app-card { background: white; padding: 12px; border-radius: 15px; text-align: center; text-decoration: none; color: #333; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border: 1px solid #eee; transition: 0.2s; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 90px; }
+        .app-card:active { transform: scale(0.95); background: #f8f9fa; }
+        .icon { font-size: 1.6rem; margin-bottom: 5px; }
+        .app-card h3 { margin: 0; font-size: 0.85rem; color: var(--primary); line-height: 1.2; }
+        .footer { text-align: center; font-size: 0.75rem; color: #888; margin-top: 30px; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <div class="header">
-    <h1>OPD Takhli Digital Toolkit</h1>
-    <p>Nurse Khemika Innovation | รพ.ตาคลี</p>
+    <h1 style="font-size: 1.4rem; margin: 0;">OPD Takhli Digital Toolkit</h1>
+    <p style="font-size: 0.8rem; margin: 5px 0 0;">Khemika Pongsri | นวัตกรรมทางการพยาบาล</p>
 </div>
 
 <div class="container">
+    <!-- กลุ่มที่ 1 -->
+    <div class="group-title">🚑 การคัดกรองและสัญญาณชีพ</div>
     <div class="menu-grid">
-        
-        <!-- 1. Triage Tool -->
-        <a href="https://URL_TO_YOUR_TRIAGE_TOOL" class="menu-card">
-            <div class="icon-box bg-triage">🏥</div>
-            <div class="card-info">
-                <h2>OPD Triage Tool</h2>
-                <p>ระบบคัดกรอง 5 ระดับ</p>
-            </div>
-        </a>
+        <a href="../OPD-ER-Takhli-Triage-" class="app-card"><span class="icon">🏥</span><h3>OPD Triage</h3></a>
+        <a href="../NEWS2-Calculator" class="app-card"><span class="icon">📊</span><h3>NEWS 2</h3></a>
+        <a href="../DKA-HHS" class="app-card"><span class="icon">💉</span><h3>DKA / HHS</h3></a>
+        <a href="../-MAP" class="app-card"><span class="icon">📉</span><h3>MAP Calc.</h3></a>
+        <a href="../----BP-" class="app-card"><span class="icon">💓</span><h3>BP Monitor</h3></a>
+    </div>
 
-        <!-- 2. NEWS 2 -->
-        <a href="https://URL_TO_YOUR_NEWS2_TOOL" class="menu-card">
-            <div class="icon-box bg-news">⚠️</div>
-            <div class="card-info">
-                <h2>NEWS 2 Score</h2>
-                <p>ประเมินคัดกรอง Sepsis</p>
-            </div>
-        </a>
+    <!-- กลุ่มที่ 2 -->
+    <div class="group-title">🧠 การประเมินเฉพาะโรค</div>
+    <div class="menu-grid">
+        <a href="../-NIHSS-score-stroke" class="app-card"><span class="icon">🧠</span><h3>NIHSS Stroke</h3></a>
+        <a href="../SOFA-score" class="app-card"><span class="icon">⚕️</span><h3>SOFA Score</h3></a>
+        <a href="../Avorado-score" class="app-card"><span class="icon">🔪</span><h3>Alvarado Score</h3></a>
+        <a href="../Croup-score" class="app-card"><span class="icon">👶</span><h3>Croup Score</h3></a>
+        <a href="../-Centor-Criteria" class="app-card"><span class="icon">👄</span><h3>Centor Criteria</h3></a>
+    </div>
 
-        <!-- 3. DKA & HHS -->
-        <a href="https://URL_TO_YOUR_DKA_TOOL" class="menu-card">
-            <div class="icon-box bg-dka">💉</div>
-            <div class="card-info">
-                <h2>DKA & HHS Toolkit</h2>
-                <p>เกณฑ์วินิจฉัยและแนวทางดูแล (V 7.1)</p>
-            </div>
-        </a>
+    <!-- กลุ่มที่ 3 -->
+    <div class="group-title">🤱 แม่และเด็ก / โรคเรื้อรัง</div>
+    <div class="menu-grid">
+        <a href="../-ANC" class="app-card"><span class="icon">🤰</span><h3>ANC Tool</h3></a>
+        <a href="../Neonatal-Juandice" class="app-card"><span class="icon">🌞</span><h3>Neonatal Jaundice</h3></a>
+        <a href="../-HbA1C-" class="app-card"><span class="icon">🍬</span><h3>HbA1C Follow-up</h3></a>
+        <a href="../FIB-4" class="app-card"><span class="icon">🧪</span><h3>FIB-4 Index</h3></a>
+    </div>
 
-        <!-- 4. Smart OPD Portal (Placeholder สำหรับโครงการในอนาคต) -->
-        <a href="#" class="menu-card" style="opacity: 0.7;">
-            <div class="icon-box bg-smart">⚙️</div>
-            <div class="card-info">
-                <h2>Smart OPD Dashboard</h2>
-                <p>ระบบจัดการข้อมูล (Coming Soon)</p>
-            </div>
-        </a>
-
+    <!-- กลุ่มที่ 4 -->
+    <div class="group-title">📋 การจัดการและ ADL</div>
+    <div class="menu-grid">
+        <a href="../-Barthel-Index-ADL-" class="app-card"><span class="icon">🚶</span><h3>Barthel Index</h3></a>
     </div>
 </div>
 
 <div class="footer">
-    © 2026 Khemika-OPD Takhli Digital Transformation<br>
-    Nursing Administration & Innovation
+    © 2026 Khemika-OPD Takhli | Smart OPD Transformation
 </div>
 
 </body>

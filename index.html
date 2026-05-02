@@ -6,163 +6,68 @@
     <title>OPD Takhli Digital Toolkit - Khemika</title>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary: #1a3a5a;
-            --accent: #007bff;
-            --bg: #f4f7f6;
-            --white: #ffffff;
-        }
+        :root { --primary: #1a3a5a; --accent: #007bff; --bg: #f4f7f6; }
         body { font-family: 'Sarabun', sans-serif; background: var(--bg); margin: 0; padding-bottom: 50px; }
-        
-        /* ส่วนหัวเรื่อง (Header) */
-        .header { 
-            background: linear-gradient(135deg, #1a3a5a, #0056b3); 
-            color: white; 
-            padding: 40px 20px; 
-            text-align: center; 
-            border-radius: 0 0 35px 35px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
-        }
-        .header h1 { margin: 0; font-size: 1.8rem; letter-spacing: 1px; }
-        .header p { margin: 10px 0 0; font-size: 0.95rem; font-weight: bold; opacity: 0.9; }
-
+        .header { background: linear-gradient(135deg, #1a3a5a, #0056b3); color: white; padding: 35px 15px; text-align: center; border-radius: 0 0 30px 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
         .container { padding: 15px; max-width: 600px; margin: auto; }
-        
-        /* หัวข้อกลุ่ม (Section Titles) */
-        .group-title { 
-            font-weight: bold; 
-            color: var(--primary); 
-            margin: 25px 0 12px 5px; 
-            border-left: 6px solid #ff4757; 
-            padding-left: 12px; 
-            font-size: 1.15rem; 
-        }
-
-        /* ตารางเมนู (Grid Layout) */
-        .menu-grid { 
-            display: grid; 
-            grid-template-columns: 1fr 1fr; 
-            gap: 12px; 
-        }
-
-        /* ปุ่มแอป (Menu Cards) */
-        .app-card { 
-            background: var(--white); 
-            padding: 18px 10px; 
-            border-radius: 20px; 
-            text-align: center; 
-            text-decoration: none; 
-            color: #333; 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
-            border: 1px solid #eee; 
-            transition: all 0.2s ease; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            justify-content: center; 
-            min-height: 110px;
-        }
-        .app-card:active { transform: scale(0.94); background: #f1f2f6; }
-        .app-card:hover { box-shadow: 0 6px 18px rgba(0,0,0,0.1); border-color: var(--accent); }
-        
+        .group-title { font-weight: bold; color: var(--primary); margin: 25px 0 12px 5px; border-left: 6px solid #007bff; padding-left: 12px; font-size: 1.1rem; }
+        .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+        .app-card { background: white; padding: 18px 10px; border-radius: 20px; text-align: center; text-decoration: none; color: #333; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #eee; transition: 0.2s; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 110px; }
+        .app-card:active { transform: scale(0.95); background: #f1f2f6; }
         .icon { font-size: 2rem; margin-bottom: 8px; display: block; }
         .app-card h3 { margin: 0; font-size: 0.9rem; color: var(--primary); line-height: 1.3; }
         .app-card p { margin: 5px 0 0; font-size: 0.7rem; color: #888; font-weight: bold; }
-
-        /* ส่วนท้าย (Footer) */
-        .footer { 
-            text-align: center; 
-            font-size: 0.8rem; 
-            color: #777; 
-            margin-top: 40px; 
-            padding: 20px; 
-            line-height: 1.6; 
-            font-weight: bold;
-        }
+        .footer { text-align: center; font-size: 0.8rem; color: #777; margin-top: 40px; font-weight: bold; }
     </style>
 </head>
 <body>
 
-<!-- ส่วนหัวเรื่อง -->
 <div class="header">
     <h1>OPD Takhli Digital Toolkit</h1>
     <p>Khemika Pongsri | Nursing Administration & Innovation</p>
-    <p style="font-size: 0.8rem;">รพ.ตาคลี จ.นครสวรรค์</p>
 </div>
 
 <div class="container">
     
-    <!-- กลุ่มที่ 1: การคัดกรองและประเมินวิกฤต -->
+    <!-- กลุ่มที่ 1: คัดกรองและประเมินวิกฤต -->
     <div class="group-title" style="border-left-color: #ff4757;">🚑 คัดกรองและประเมินวิกฤต</div>
     <div class="menu-grid">
-        <a href="https://khemika-opd.github.io/OPD-ER-Takhli-Triage-/" class="app-card">
-            <span class="icon">🏥</span><h3>OPD Triage</h3><p>V 7.5</p>
-        </a>
-        <a href="https://khemika-opd.github.io/NEWS2-Calculator/" class="app-card">
-            <span class="icon">📊</span><h3>NEWS 2</h3><p>Step Color</p>
-        </a>
-        <a href="https://khemika-opd.github.io/DKA-HHS/" class="app-card">
-            <span class="icon">💉</span><h3>DKA / HHS</h3><p>V 7.1</p>
-        </a>
-        <a href="https://khemika-opd.github.io/-MAP/" class="app-card">
-            <span class="icon">📉</span><h3>MAP Calc.</h3>
-        </a>
-        <a href="https://khemika-opd.github.io/----BP-/" class="app-card">
-            <span class="icon">💓</span><h3>BP Monitor</h3>
-        </a>
+        <a href="https://khemika-opd.github.io/OPD-ER-Takhli-Triage-/" class="app-card"><span class="icon">🏥</span><h3>OPD Triage</h3><p>V 7.5</p></a>
+        <a href="https://khemika-opd.github.io/NEWS2-Calculator/" class="app-card"><span class="icon">📊</span><h3>NEWS 2</h3><p>Step Color</p></a>
+        <a href="https://khemika-opd.github.io/DKA-HHS/" class="app-card"><span class="icon">💉</span><h3>DKA / HHS</h3><p>V 7.1</p></a>
+        <a href="https://khemika-opd.github.io/SOFA-score/" class="app-card"><span class="icon">⚕️</span><h3>SOFA Score</h3></a>
     </div>
 
-    <!-- กลุ่มที่ 2: การประเมินเฉพาะโรค (Scoring) -->
-    <div class="group-title" style="border-left-color: #3742fa;">🧠 การประเมินเฉพาะโรค</div>
+    <!-- กลุ่มที่ 2: ดูแลสุขภาพเด็ก (Pediatric Care) -->
+    <div class="group-title" style="border-left-color: #ff9f43;">👶 การประเมินในเด็ก</div>
     <div class="menu-grid">
-        <a href="https://khemika-opd.github.io/-NIHSS-score-stroke/" class="app-card">
-            <span class="icon">🧠</span><h3>NIHSS Stroke</h3>
-        </a>
-        <a href="https://khemika-opd.github.io/SOFA-score/" class="app-card">
-            <span class="icon">⚕️</span><h3>SOFA Score</h3>
-        </a>
-        <a href="https://khemika-opd.github.io/Avorado-score/" class="app-card">
-            <span class="icon">🔪</span><h3>Alvarado Score</h3>
-        </a>
-        <a href="https://khemika-opd.github.io/Croup-score/" class="app-card">
-            <span class="icon">👶</span><h3>Croup Score</h3>
-        </a>
-        <a href="https://khemika-opd.github.io/-Centor-Criteria/" class="app-card">
-            <span class="icon">👄</span><h3>Centor Criteria</h3>
-        </a>
+        <a href="https://khemika-opd.github.io/Neonatal-Juandice/" class="app-card"><span class="icon">🌞</span><h3>ตัวเหลืองในทารก</h3><p>Micro-Bilirubin</p></a>
+        <a href="https://khemika-opd.github.io/Croup-score/" class="app-card"><span class="icon">🌬️</span><h3>Croup Score</h3><p>หายใจอุดกั้น</p></a>
+        <a href="https://khemika-opd.github.io/----BP-/" class="app-card"><span class="icon">💓</span><h3>BP ในเด็ก/ทั่วไป</h3><p>Blood Pressure</p></a>
     </div>
 
-    <!-- กลุ่มที่ 3: แม่และเด็ก / โรคเรื้อรัง -->
-    <div class="group-title" style="border-left-color: #2ed573;">🤱 แม่และเด็ก / โรคเรื้อรัง</div>
+    <!-- กลุ่มที่ 3: การประเมิน Lab และดัชนีสุขภาพ -->
+    <div class="group-title" style="border-left-color: #2ed573;">🧪 การประเมิน Lab & ค่าน้ำตาล</div>
     <div class="menu-grid">
-        <a href="https://khemika-opd.github.io/-ANC/" class="app-card">
-            <span class="icon">🤰</span><h3>ANC Tool</h3>
-        </a>
-        <a href="https://khemika-opd.github.io/Neonatal-Juandice/" class="app-card">
-            <span class="icon">🌞</span><h3>Neonatal Jaundice</h3>
-        </a>
-        <a href="https://khemika-opd.github.io/-HbA1C-/" class="app-card">
-            <span class="icon">🍬</span><h3>HbA1C Follow-up</h3>
-        </a>
-        <a href="https://khemika-opd.github.io/FIB-4/" class="app-card">
-            <span class="icon">🧪</span><h3>FIB-4 Index</h3>
-        </a>
+        <a href="https://khemika-opd.github.io/-ANC/" class="app-card"><span class="icon">🔬</span><h3>ANC Count</h3><p>เม็ดเลือดขาว</p></a>
+        <a href="https://khemika-opd.github.io/-HbA1C-/" class="app-card"><span class="icon">🍬</span><h3>HbA1C</h3><p>น้ำตาลสะสม</p></a>
+        <a href="https://khemika-opd.github.io/FIB-4/" class="app-card"><span class="icon">🧪</span><h3>FIB-4 Index</h3><p>พังผืดตับ</p></a>
+        <a href="https://khemika-opd.github.io/-MAP/" class="app-card"><span class="icon">📉</span><h3>MAP Calc.</h3></a>
     </div>
 
-    <!-- กลุ่มที่ 4: สมรรถภาพและการจัดการ -->
-    <div class="group-title" style="border-left-color: #ffa502;">📋 การประเมิน ADL</div>
+    <!-- กลุ่มที่ 4: ระบบประสาทและโรคเฉพาะ -->
+    <div class="group-title" style="border-left-color: #3742fa;">🧠 ระบบประสาทและอาการสำคัญ</div>
     <div class="menu-grid">
-        <a href="https://khemika-opd.github.io/-Barthel-Index-ADL-/" class="app-card">
-            <span class="icon">🚶</span><h3>Barthel Index</h3><p>ADL Assessment</p>
-        </a>
+        <a href="https://khemika-opd.github.io/-NIHSS-score-stroke/" class="app-card"><span class="icon">🧠</span><h3>NIHSS Stroke</h3></a>
+        <a href="https://khemika-opd.github.io/Avorado-score/" class="app-card"><span class="icon">🔪</span><h3>Alvarado Score</h3><p>ไส้ติ่ง</p></a>
+        <a href="https://khemika-opd.github.io/-Centor-Criteria/" class="app-card"><span class="icon">👄</span><h3>Centor Criteria</h3><p>คออักเสบ</p></a>
+        <a href="https://khemika-opd.github.io/-Barthel-Index-ADL-/" class="app-card"><span class="icon">🚶</span><h3>Barthel ADL</h3></a>
     </div>
 
 </div>
 
-<!-- ส่วนท้าย -->
 <div class="footer">
-    © 2026 Khemika-OPD Takhli Digital Transformation<br>
-    Nursing Management Innovation Project
+    © 2026 Khemika-OPD Takhli | Smart OPD Transformation
 </div>
 
 </body>

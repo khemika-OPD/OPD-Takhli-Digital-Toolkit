@@ -8,7 +8,7 @@
     <style>
         :root { --primary: #1a3a5a; --accent: #007bff; --bg: #f4f7f6; }
         body { font-family: 'Sarabun', sans-serif; background: var(--bg); margin: 0; padding-bottom: 50px; }
-        .header { background: linear-gradient(135deg, #1a3a5a, #0056b3); color: white; padding: 35px 15px; text-align: center; border-radius: 0 0 30px 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .header { background: linear-gradient(135deg, #1a3a5a, #0056b3); color: white; padding: 35px 15px; text-align: center; border-radius: 0 0 30px 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); position: relative; }
         .container { padding: 15px; max-width: 600px; margin: auto; }
         .group-title { font-weight: bold; color: var(--primary); margin: 25px 0 12px 5px; border-left: 6px solid #007bff; padding-left: 12px; font-size: 1.1rem; }
         .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -18,11 +18,17 @@
         .app-card h3 { margin: 0; font-size: 0.9rem; color: var(--primary); line-height: 1.3; }
         .app-card p { margin: 5px 0 0; font-size: 0.7rem; color: #888; font-weight: bold; }
         .footer { text-align: center; font-size: 0.8rem; color: #777; margin-top: 40px; font-weight: bold; }
+        
+        /* สไตล์ปุ่มย้อนกลับหน้าหลัก Dashboard */
+        .back-btn { display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; text-decoration: none; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; margin-bottom: 12px; transition: 0.2s; border: 1px solid rgba(255,255,255,0.3); }
+        .back-btn:hover { background: rgba(255, 255, 255, 0.3); }
     </style>
 </head>
 <body>
 
 <div class="header">
+    <!-- ⬅️ ปุ่มลอยสำหรับคลิกย้อนกลับหน้าแรก Dashboard หลัก -->
+    <a href="index.html" class="back-btn">⬅️ กลับสู่ระบบหลัก Dashboard</a>
     <h1>OPD Takhli Digital Toolkit</h1>
     <p>Khemika Pongsri | Nursing Administration & Innovation</p>
 </div>
@@ -62,6 +68,17 @@
         <a href="https://khemika-opd.github.io/Avorado-score/" class="app-card"><span class="icon">🔪</span><h3>Alvarado Score</h3><p>ไส้ติ่ง</p></a>
         <a href="https://khemika-opd.github.io/-Centor-Criteria/" class="app-card"><span class="icon">👄</span><h3>Centor Criteria</h3><p>คออักเสบ</p></a>
         <a href="https://khemika-opd.github.io/-Barthel-Index-ADL-/" class="app-card"><span class="icon">🚶</span><h3>Barthel ADL</h3></a>
+    </div>
+
+    <!-- 🩺 กลุ่มที่ 5: การประเมินโรคเรื้อรัง (อัปเดตลิงก์จริงของอาจารย์เรียบร้อยแล้วค่ะ) -->
+    <div class="group-title" style="border-left-color: #10b981;">🩺 การประเมินโรคเรื้อรัง (NCD Care)</div>
+    <div class="menu-grid">
+        <!-- 🌟 เชื่อมไปยังระบบคำนวณความดันโลหิตที่บ้านตัวจริงของอาจารย์ -->
+        <a href="https://khemika-opd.github.io/-HBPM/" class="app-card">
+            <span class="icon">❤️</span>
+            <h3>ค่าเฉลี่ย HBPM</h3>
+            <p>HT Smart Care</p>
+        </a>
     </div>
 
 </div>

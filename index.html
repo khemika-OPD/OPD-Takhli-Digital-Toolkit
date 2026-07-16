@@ -16,40 +16,36 @@
         .app-card:active { transform: scale(0.95); background: #f1f2f6; }
         .icon { font-size: 2rem; margin-bottom: 8px; display: block; }
         .app-card h3 { margin: 0; font-size: 0.9rem; color: var(--primary); line-height: 1.3; }
-        .app-card p { margin: 5px 0 0; font-size: 0.7rem; color: #888; font-weight: bold; }
+        .app-card p { margin: 5px 0 0; font-size: 0.75rem; color: #64748b; font-weight: bold; }
         .footer { text-align: center; font-size: 0.8rem; color: #777; margin-top: 40px; font-weight: bold; }
-        
-        /* สไตล์ปุ่มย้อนกลับหน้าหลัก Dashboard */
-        .back-btn { display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; text-decoration: none; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; margin-bottom: 12px; transition: 0.2s; border: 1px solid rgba(255,255,255,0.3); }
-        .back-btn:hover { background: rgba(255, 255, 255, 0.3); }
     </style>
 </head>
 <body>
 
 <div class="header">
-    <!-- ⬅️ ปุ่มลอยสำหรับคลิกย้อนกลับหน้าแรก Dashboard หลัก -->
-    <a href="index.html" class="back-btn">⬅️ กลับสู่ระบบหลัก Dashboard</a>
     <h1>OPD Takhli Digital Toolkit</h1>
     <p>Khemika Pongsri | Nursing Administration & Innovation</p>
 </div>
 
 <div class="container">
     
-    <!-- กลุ่มที่ 1: คัดกรองและประเมินวิกฤต -->
+    <!-- 🚑 กลุ่มที่ 1: คัดกรองและประเมินวิกฤต (ปรับรายละเอียดปุ่มเรียบร้อยค่ะ) -->
     <div class="group-title" style="border-left-color: #ff4757;">🚑 คัดกรองและประเมินวิกฤต</div>
     <div class="menu-grid">
-        <a href="https://khemika-opd.github.io/OPD-ER-Takhli-Triage-/" class="app-card"><span class="icon">🏥</span><h3>OPD Triage</h3><p>V 7.5</p></a>
-        <a href="https://khemika-opd.github.io/NEWS2-Calculator/" class="app-card"><span class="icon">📊</span><h3>NEWS 2</h3><p>Step Color</p></a>
-        <a href="https://khemika-opd.github.io/DKA-HHS/" class="app-card"><span class="icon">💉</span><h3>DKA / HHS</h3><p>V 7.1</p></a>
-        <a href="https://khemika-opd.github.io/SOFA-score/" class="app-card"><span class="icon">⚕️</span><h3>SOFA Score</h3></a>
+        <a href="https://khemika-opd.github.io/OPD-ER-Takhli-Triage-/" class="app-card"><span class="icon">🏥</span><h3>OPD Triage</h3><p>ระบบคัดแยกผู้ป่วย</p></a>
+        <a href="https://khemika-opd.github.io/NEWS2-Calculator/" class="app-card"><span class="icon">📊</span><h3>NEWS 2</h3><p>ประเมิน sepsis</p></a>
+        <a href="https://khemika-opd.github.io/DKA-HHS/" class="app-card"><span class="icon">💉</span><h3>DKA / HHS</h3></a>
+        <a href="https://khemika-opd.github.io/SOFA-score/" class="app-card"><span class="icon">⚕️</span><h3>SOFA Score</h3><p>ประเมิน Organ failure</p></a>
     </div>
 
-    <!-- กลุ่มที่ 2: ดูแลสุขภาพเด็ก (Pediatric Care) -->
-    <div class="group-title" style="border-left-color: #ff9f43;">👶 การประเมินในเด็ก</div>
+    <!-- กลุ่มที่ 2: ดูแลสุขภาพเด็ก -->
+    <div class="group-title" style="border-left-color: #e84393;">👶 การประเมินในเด็ก</div>
     <div class="menu-grid">
+        <a href="https://khemika-opd.github.io/PEWS/" class="app-card"><span class="icon">👶</span><h3>PEWS Score</h3><p>ความเสี่ยงเด็กวิกฤต</p></a>
         <a href="https://khemika-opd.github.io/Neonatal-Juandice/" class="app-card"><span class="icon">🌞</span><h3>ตัวเหลืองในทารก</h3><p>Micro-Bilirubin</p></a>
-        <a href="https://khemika-opd.github.io/Croup-score/" class="app-card"><span class="icon">🌬️</span><h3>Croup Score</h3><p>หายใจอุดกั้น</p></a>
+        <a href="https://khemika-opd.github.io/Croup-score/" class="app-card"><span class="icon">🌬️</span><h3>Croup Score</h3><p>Downes Score</p></a>
         <a href="https://khemika-opd.github.io/----BP-/" class="app-card"><span class="icon">💓</span><h3>BP ในเด็ก/ทั่วไป</h3><p>Blood Pressure</p></a>
+        <a href="https://khemika-opd.github.io/child-growth/" class="app-card"><span class="icon">🌿</span><h3>น้ำหนัก/ส่วนสูงเด็ก</h3><p>เกณฑ์กรมอนามัย</p></a>
     </div>
 
     <!-- กลุ่มที่ 3: การประเมิน Lab และดัชนีสุขภาพ -->
@@ -70,15 +66,11 @@
         <a href="https://khemika-opd.github.io/-Barthel-Index-ADL-/" class="app-card"><span class="icon">🚶</span><h3>Barthel ADL</h3></a>
     </div>
 
-    <!-- 🩺 กลุ่มที่ 5: การประเมินโรคเรื้อรัง (อัปเดตลิงก์จริงของอาจารย์เรียบร้อยแล้วค่ะ) -->
+    <!-- กลุ่มที่ 5: การประเมินโรคเรื้อรัง (NCD Care) -->
     <div class="group-title" style="border-left-color: #10b981;">🩺 การประเมินโรคเรื้อรัง (NCD Care)</div>
     <div class="menu-grid">
-        <!-- 🌟 เชื่อมไปยังระบบคำนวณความดันโลหิตที่บ้านตัวจริงของอาจารย์ -->
-        <a href="https://khemika-opd.github.io/-HBPM/" class="app-card">
-            <span class="icon">❤️</span>
-            <h3>ค่าเฉลี่ย HBPM</h3>
-            <p>HT Smart Care</p>
-        </a>
+        <a href="https://khemika-opd.github.io/-HBPM/" class="app-card"><span class="icon">❤️</span><h3>ค่าเฉลี่ย HBPM</h3><p>HT Smart Care</p></a>
+        <a href="https://khemika-opd.github.io/CVD-Risk/" class="app-card"><span class="icon">💖</span><h3>Thai CV Risk Score</h3><p>ความเสี่ยงโรคหัวใจ</p></a>
     </div>
 
 </div>
